@@ -46,15 +46,27 @@
 .upperArea>p {
     margin: 40px 0px;
 }
+.upperArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .score {
     font-size: 3.8rem;
-    color: rgba(221, 0, 48, 0.767);
+    color: rgba(238, 0, 52, 0.836);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
-    border: 1px solid black;
+    border: 0.1px solid black;
+    width: 10vw;
+    text-align: center;
 }
-
+#img {
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+}
 .currentScore {
     height: 100px;
     width: 200px;
@@ -82,6 +94,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    align-items: center;
 }
 
 .center-section button {
