@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oleo+Script:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +16,16 @@
     width: 100vw;
     background: linear-gradient(to bottom right, red, purple);
 }
+
 .player-1 {
-    background-color: rgba(255, 255, 255, 0.3) !important;
+    background-color: rgba(230, 230, 230, 0.45) !important;
 }
 
 .player {
     height: 80%;
     width: 35%;
     border-radius: 10px;
-    background-color: rgba(105, 105, 105, 0.3);
+    background-color: rgba(187, 187, 187, 0.45);
     padding: 15px;
     color: black;
     text-align: center;
@@ -28,18 +33,70 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    position: relative;
 }
-.upperArea > p{
+
+.name1,
+.name2 {
+    color: rgb(0, 0, 0);
+    font-family: "Oleo Script", system-ui;
+    font-size: 2.6rem;
+}
+
+.upperArea>p {
     margin: 40px 0px;
 }
+
 .score {
     font-size: 3.8rem;
-    color: rgb(0, 0, 0);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(221, 0, 48, 0.767);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 1px solid black;
 }
+
 .currentScore {
     height: 100px;
     width: 200px;
-    background-color: rgba(128, 0, 122, 0.6);
+    background-color: rgba(221, 0, 48, 0.767);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.currentScore :nth-child(1) {
+    font-size: 1.399rem;
+    color: white;
+    font-family: "Oleo Script", system-ui;
+}
+
+.center-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.center-section button {
+    padding: 10px 25px;
+    z-index: 1;
+    border-radius: 5px;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 2px;
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.center-section button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
