@@ -95,6 +95,7 @@
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
+    padding: 40px;
 }
 
 .center-section button {
@@ -112,4 +113,7 @@
     background-color: black;
     color: white;
     cursor: pointer;
+}
+.activePlayer {
+    background-color: rgba(187, 187, 187, 0.45);
 }
