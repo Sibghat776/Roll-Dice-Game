@@ -55,10 +55,8 @@
 
 .score {
     font-size: 3.8rem;
-    color: rgba(238, 0, 52, 0.836);
+    color: rgb(221, 0, 48);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0);
-    border: 0.1px solid black;
     width: 10vw;
     text-align: center;
 }
@@ -115,5 +113,5 @@
     cursor: pointer;
 }
 .activePlayer {
-    background-color: rgba(255, 255, 255, 0.562);
+    background-color: rgba(255, 255, 255, 0.712);
 }
